@@ -14,3 +14,5 @@ DATABASES = {
 INSTALLED_APPS += [
     'modelthreed'
 ]
+
+LOGIN_URL = '/login'

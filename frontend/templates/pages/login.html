@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{{ object.title }}</h1>
+
+    <form action="{% url 'authorize' %}?next=/main" method="post">
+
+        {% csrf_token %}
+
+        Логин <input type="text" name="username"><br>
+        Пароль <input type="password" name="password"><br>
+
+        <input type="submit" value="Авторизоваться">
+
+    </form>
+{% endblock %}

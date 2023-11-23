@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <form action="api/parse_images/" method="post" enctype="multipart/form-data">
+
+        Данные о коробках <input type="file" name="csv_file" required> <br>
+        Фотографии укладки<input type="file" name="images" multiple required> <br>
+
+        <input type="submit" value="Рассчитать">
+
+    </form>
+
+{% endblock %}

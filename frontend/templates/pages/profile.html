@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% include 'include/breadcrumb.html' %}
+
+<h1>{{ object.title }}</h1>
+
+    Имя: <b>{{ current_user.first_name }}</b><br>
+    Фамилия: <b>{{ current_user.last_name }}</b>
+{% endblock %}
